@@ -1,0 +1,24 @@
+{
+  "name": "repository1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "normalize.css": "^7.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilbrigz/rpository1.git"
+  },
+  "author": "brayn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ilbrigz/rpository1/issues"
+  },
+  "homepage": "https://github.com/ilbrigz/rpository1#readme"
+}
