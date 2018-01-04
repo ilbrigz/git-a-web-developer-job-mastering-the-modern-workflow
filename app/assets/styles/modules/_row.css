@@ -1,5 +1,7 @@
 .row {
-		
+	&--t-padding {
+		padding-top: 5rem;
+	}
 	@mixin clearFix;
 	&--gutters {
 		margin-right: -65px;
@@ -12,6 +14,8 @@
 	&--gutters > div {
 		padding-right: 65px;
 	}
+	
+
 
 	&--gutters-large > div {
 		padding-right: 100px;
@@ -43,6 +47,26 @@
 		}
 		&__medium-8--smaller {
 			width: 63%;
+		}
+			&--gutters-small > div {
+		padding-right: 45px;
+	}
+
+	&--gutters-small {
+		margin-right: -45px;
+	}
+	}
+
+	/*begin equal height rules*/
+
+	&--equal-height-at-medium {
+		@mixin atMedium {
+			display: flex;
+		}
+
+		& > div {
+			float: none;
+			display: flex;
 		}
 	}
 }
