@@ -20,6 +20,10 @@ gulp.task('watch', function(){////////////////////// gulp watch task
 		gulp.start('cssInject');//a css task
 	});
 
+	watch('./app/assets/scripts/**/*.js', function() {
+		gulp.start('scriptsRefresh');
+	})
+
 });
 
 
@@ -28,3 +32,7 @@ gulp.task('cssInject', ['styles'], function() {
 	return gulp.src('./app/temp/styles/styles.css')
 	.pipe(browserSync.stream());
 });
+
+gulp.task('scriptsRefresh',['scripts'], function() {//runs webpack and reloads brower on changes
+	browserSync.reload()
+})
