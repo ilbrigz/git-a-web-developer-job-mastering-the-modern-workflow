@@ -9,11 +9,12 @@
         <meta name="keywords" content="Travel planning, travel bundles, travel escapes, affordable travel"/>
         <meta name="description" content="Your clarity. One trip away. We create soul restoring journeys that inspire you to be you."/>
         <link rel="stylesheet" href="temp/styles/styles.css"/>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body>
         <header class="site-header">
             <div class="wrapper">
-               <div class="site-header__logo"> 
+               <div class="site-header__logo">
                 <div class="icon icon--clear-view-escapes site-header__logo__graphic">Clear View Escapes</div></div>
             <div class="site-header__menu-icon">
                 <div class="site-header__menu-icon__middle"></div>
@@ -56,17 +57,17 @@
             </picture>
             <div class="large-hero__text-content">
                 <div class="wrapper">
-                    <h1 class="large-hero__title">
+                    <h1 class="large-hero__title" data-aos="zoom-in" data-aos-duration="1000">
                         Your clarity.
                     </h1>
-                    <h2 class="large-hero__subtitle">
+                    <h2 class="large-hero__subtitle" >
                         One trip away.
                     </h2>
                     <p class="large-hero__description">
                         We create soul restoring journeys that inspire you to be you.
                     </p>
                     <p>
-                        <a href="#" class="btn btn--orange btn--large">
+                        <a href="#" class="btn btn--orange btn--large" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                             Get Started Today
                         </a>
                     </p>
@@ -146,7 +147,7 @@
                 </h2>
                 <div class="row row--gutters-large generic-content-container">
                     <div class="row__medium-6">
-                        <div class="feature-item">
+                        <div class="feature-item" data-aos="fade-up">
                             <span class="icon icon--rain feature-item-icon">
                             </span>
                             <h3 class="feature-item__title">
@@ -156,7 +157,7 @@
                                 Download our app and we&rsquo;ll send you a notice if it&rsquo;s about to rain in the next 20 minutes around your current location. A good rain can be refreshing, but sometimes you just want to stay dry.
                             </p>
                         </div>
-                        <div class="feature-item">
+                        <div class="feature-item" data-aos="fade-up">
                             <span class="icon icon--globe feature-item-icon">
                             </span>
                             <h3 class="feature-item__title">
@@ -168,7 +169,7 @@
                         </div>
                     </div>
                     <div class="row__medium-6">
-                        <div class="feature-item">
+                        <div class="feature-item" data-aos="fade-up">
                             <span class="icon icon--wifi feature-item-icon">
                             </span>
                             <h3 class="feature-item__title">
@@ -178,7 +179,7 @@
                                 We only send you on trips to places we can personally vouch for as being amazing. Which means we&rsquo;ve mapped out where local wi-fi spots are and marked them in our app&rsquo;s map view.
                             </p>
                         </div>
-                        <div class="feature-item">
+                        <div class="feature-item" data-aos="fade-up">
                             <span class="icon icon--fire feature-item-icon">
                             </span>
                             <h3 class="feature-item__title">
@@ -204,7 +205,7 @@
                 </h2>
                 <div class="row row--gutters row--t-padding row--gutters-small row--equal-height-at-medium generic-content-container">
                     <div class="row__medium-4">
-                        <div class="testimonial">
+                        <div class="testimonial" data-aos="flip-up" data-aos-duration="1000">
                             <div class="testimonial__photo">
                                 <img sizes="160px" srcset="assets/images/testimonial-jane-i.jpg 160w, assets/images/testimonial-jane-hi-dpi-i.jpg 320w"/>
                             </div>
@@ -220,7 +221,8 @@
                         </div>
                     </div>
                     <div class="row__medium-4">
-                        <div class="testimonial generic-content-container">
+                        <div class="testimonial generic-content-container" data-aos="flip-up"
+     data-aos-delay="150" data-aos-duration="1000">
                             <div class="testimonial__photo">
                                 <img sizes="160px" srcset="assets/images/testimonial-john-i.jpg 160w, assets/images/testimonial-john-hi-dpi-i.jpg 320w"/>
                             </div>
@@ -236,7 +238,9 @@
                         </div>
                     </div>
                     <div class="row__medium-4">
-                        <div class="testimonial generic-content-container">
+                        <div class="testimonial generic-content-container" data-aos="flip-up"
+     data-aos-delay="300"
+     data-aos-duration="1000">
                             <div class="testimonial__photo">
                                 <img sizes="160px" srcset="assets/images/testimonial-cat-i.jpg 160w, assets/images/testimonial-cat-hi-dpi-i.jpg 320w"/>
                             </div>
@@ -266,6 +270,7 @@
                 </p>
             </div>
         </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="/temp/scripts/App.js">
         </script>
     </body>
