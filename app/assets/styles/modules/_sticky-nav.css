@@ -1,0 +1,27 @@
+@mixin atMedium {
+	[data-aos="dark-nav"] {
+	transform: scale(1);
+  transition-property:  transform,background-color;
+
+  &.aos-animate {
+    background-color: rgba(47, 85, 114,1);
+    transform: scale(1.04);
+  }
+}[data-aos="orange-btn"] {
+  transition-property: background-color;
+
+  &.aos-animate {
+    background-color: rgba(213, 149, 65, 1);
+
+  }
+}
+[data-aos="scale-logo"] {
+  transform: scale(1);
+  transition-property:  transform;
+
+  &.aos-animate {
+  
+  transform: scale(.65);
+  }
+}
+}
