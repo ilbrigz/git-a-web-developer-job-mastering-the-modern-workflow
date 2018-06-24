@@ -1,9 +1,11 @@
 import MobileMenu from './modules/MobileMenu.js';
 import RevealOnScroll from './modules/RevealOnScroll.js';
+import Modal from './modules/Modal.js';
 
 
 const mobileMenu = new MobileMenu();
 const revealOnScroll = new RevealOnScroll();
+const modal = new Modal();
 
 AOS.init();
 function alerttt() {
@@ -56,4 +58,6 @@ window.addEventListener('scroll', function (event) {
 
 
 // smooth scroll
-var scroll = new SmoothScroll('a[href*="#"]',{topOnEmptyHash: true});
+var scroll = new SmoothScroll('a[href*="#"]', {
+	ignore: '.open-modal'
+});

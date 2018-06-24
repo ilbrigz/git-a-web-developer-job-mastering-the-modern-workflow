@@ -4,6 +4,7 @@
 	text-decoration: none;
 	padding: .8rem 1.2rem;
 	display: inline-block;
+	cursor: pointer;
 
 	&--orange {
 		background-color: $mainOrange;
