@@ -10,6 +10,7 @@
         <meta name="description" content="Your clarity. One trip away. We create soul restoring journeys that inspire you to be you."/>
         <link rel="stylesheet" href="temp/styles/styles.css"/>
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="/temp/scripts/Vendor.js"></script>
     </head>
     <body>
         <header class="site-header"  data-aos="dark-nav"
@@ -104,17 +105,18 @@
                     <!-- ////////////////////////////we dont need the picture element bec we only need to change resolution -->
                     <!--  size:only for screens that are 970px or larger does the image need to be 976px, otherwise for screen smaller than these the image need to be 100% of view -->
                     <!-- ///FOR RESOLUTION AJUSTMENT PICTURE AND SOURCE TAG IS NOT NEEDED -->
-                    <img  sizes="(min-width: 970px) 976px, 100vw"  srcset="assets/images/first-trip-low-res-i.jpg 565w,  assets/images/first-trip-i.jpg 976w, assets/images/first-trip-hi-dpi-i.jpg 1952w"  alt="Couple walking down a street."/>
+                    <img class="lazyload" sizes="(min-width: 970px) 976px, 100vw"  data-srcset="assets/images/first-trip-low-res-i.jpg 565w,  assets/images/first-trip-i.jpg 976w, assets/images/first-trip-hi-dpi-i.jpg 1952w"  alt="Couple walking down a street."/>
                 </div>
                 <div class="row row--gutters">
                     <div class="row__medium-4 row__medium-4--larger row__b-margin-until--medium">
                         <picture>
                             <!--  //////////////////////////////////////////////////sizes will tell chrome not to take the most hi dpi image since it is not 100% width -->
                             <!--  ///COMBINATION OF ART AND RESOLUTION ADJUSTMENT -->
-                            <source sizes ="404px" srcset="assets/images/our-start-i.jpg 404w, assets/images/our-start-hi-dpi-i.jpg 808w" media="(min-width: 1020px)"/>
-                            <source sizes ="320px" srcset="assets/images/our-start-portrait-i.jpg 382w, assets/images/our-start-portrait-hi-dpi-i.jpg 764w" media="(min-width: 800px)"/>
+                            <source sizes ="404px" data-srcset="assets/images/our-start-i.jpg 404w, assets/images/our-start-hi-dpi-i.jpg 808w" media="(min-width: 1020px)"/>
+                            <source sizes ="320px" data-srcset="assets/images/our-start-portrait-i.jpg 382w, assets/images/our-start-portrait-hi-dpi-i.jpg 764w" media="(min-width: 800px)"/>
                             <!-- sizes is not added since for 800px bellow the size of the immage is full width -->
-                            <img srcset="assets/images/our-start-landscape-i.jpg 800w, assets/images/our-start-landscape-hi-dpi-i.jpg 1600w" alt="Our founder, Jane Doe"/>
+                            <!-- lazyload is only added on img tag -->
+                            <img class="lazyload" data-srcset="assets/images/our-start-landscape-i.jpg 800w, assets/images/our-start-landscape-hi-dpi-i.jpg 1600w" alt="Our founder, Jane Doe"/>
                         </picture>
                     </div>
                     <div class="row__medium-8 row__medium-4--larger">
@@ -205,7 +207,7 @@
                 </div>
             </div>
         </div>
-        <div id="testimonials" class="page-section page-section--testimonials link-target">
+        <div id="testimonials" class="page-section page-section--testimonials lazyload link-target">
             <div class="wrapper wrapper--no-padding-until-medium">
                 <h2 class="section-title section-title--blue">
                     <span class="icon icon--comment section-title__icon">
@@ -219,7 +221,7 @@
                     <div class="row__medium-4">
                         <div class="testimonial" data-aos="flip-up" data-aos-duration="1000">
                             <div class="testimonial__photo">
-                                <img sizes="160px" srcset="assets/images/testimonial-jane-i.jpg 160w, assets/images/testimonial-jane-hi-dpi-i.jpg 320w"/>
+                                <img class="lazyload" sizes="160px" data-srcset="assets/images/testimonial-jane-i.jpg 160w, assets/images/testimonial-jane-hi-dpi-i.jpg 320w"/>
                             </div>
                             <h3 class="testimonial__title">
                                 Jane Doe
@@ -236,7 +238,7 @@
                         <div class="testimonial generic-content-container" data-aos="flip-up"
      data-aos-delay="150" data-aos-duration="1000">
                             <div class="testimonial__photo">
-                                <img sizes="160px" srcset="assets/images/testimonial-john-i.jpg 160w, assets/images/testimonial-john-hi-dpi-i.jpg 320w"/>
+                                <img class="lazyload" sizes="160px" data-srcset="assets/images/testimonial-john-i.jpg 160w, assets/images/testimonial-john-hi-dpi-i.jpg 320w"/>
                             </div>
                             <h3 class="testimonial__title">
                                 John Smith
@@ -254,7 +256,7 @@
      data-aos-delay="300"
      data-aos-duration="1000">
                             <div class="testimonial__photo">
-                                <img sizes="160px" srcset="assets/images/testimonial-cat-i.jpg 160w, assets/images/testimonial-cat-hi-dpi-i.jpg 320w"/>
+                                <img class="lazyload" sizes="160px" data-srcset="assets/images/testimonial-cat-i.jpg 160w, assets/images/testimonial-cat-hi-dpi-i.jpg 320w"/>
                             </div>
                             <h3 class="testimonial__title">
                                 Cat McKitty
@@ -304,5 +306,6 @@
         <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
           <script src="/temp/scripts/App.js"></script>
+
     </body>
 </html>

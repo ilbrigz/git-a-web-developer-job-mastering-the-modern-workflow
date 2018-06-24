@@ -16,15 +16,18 @@ class Modal {
 	openModal(event) {
 
 		this.modal.classList.add("modal--is-visible");
+		document.body.style.overflow = "hidden";
 		event.preventDefault()
 	}
 	closeModal() {
 		this.modal.classList.remove("modal--is-visible");
+		document.body.style.overflow = "scroll";
 	}	
 	keyPressHandler(e) {
 
     	if((e.key=='Escape'||e.key=='Esc'||e.keyCode==27)){
     	this.modal.classList.remove("modal--is-visible");
+    	document.body.style.overflow = "scroll";
         e.preventDefault();
         return false;
    	 }

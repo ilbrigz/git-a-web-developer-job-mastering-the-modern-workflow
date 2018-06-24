@@ -20,7 +20,7 @@
   transition-property:  transform;
 
   &.aos-animate {
-  transform: scale(.65);
+  transform: scale(.60);
   }
 }
 [data-aos="color-orange"] {
