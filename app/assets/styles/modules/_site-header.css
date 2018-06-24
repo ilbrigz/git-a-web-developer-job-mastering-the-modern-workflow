@@ -117,3 +117,6 @@ transition: background-color .3s ease-out;
 		}
 	}
 }
+.background-red{
+	background-color: red !important;
+}

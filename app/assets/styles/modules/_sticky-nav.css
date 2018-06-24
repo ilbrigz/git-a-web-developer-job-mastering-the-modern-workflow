@@ -20,8 +20,23 @@
   transition-property:  transform;
 
   &.aos-animate {
-  
   transform: scale(.65);
+  }
+}
+[data-aos="color-orange"] {
+  transform: scale(1);
+  transition-property:  color;
+
+  &.aos-animate {
+ color: rgba(213, 149, 65, 1);
+  }
+}
+[data-aos="orange-link"] {
+  transition-property:  color;
+
+  &.aos-animate {
+ color: rgba(213, 149, 65, 1);
+
   }
 }
 }

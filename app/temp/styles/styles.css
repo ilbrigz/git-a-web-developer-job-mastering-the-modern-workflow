@@ -1198,6 +1198,10 @@ transition: background-color .3s ease-out;
 		        transform: scale(1);
 		}
 
+.background-red{
+	background-color: red !important;
+}
+
 @media (min-width: 800px) {
 
 .primary-nav--pull-right {
@@ -1294,9 +1298,26 @@ transition: background-color .3s ease-out;
 }
 
   [data-aos="scale-logo"].aos-animate {
-  
   -webkit-transform: scale(.65);
-  
           transform: scale(.65);
+  }
+[data-aos="color-orange"] {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition-property:  color;
+  transition-property:  color;
+}
+
+  [data-aos="color-orange"].aos-animate {
+ color: rgba(213, 149, 65, 1);
+  }
+[data-aos="orange-link"] {
+  -webkit-transition-property:  color;
+  transition-property:  color;
+}
+
+  [data-aos="orange-link"].aos-animate {
+ color: rgba(213, 149, 65, 1);
+
   }
 	}
