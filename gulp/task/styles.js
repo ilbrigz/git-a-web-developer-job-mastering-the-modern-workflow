@@ -1,10 +1,11 @@
 var gulp = require('gulp'), //imports the gulp library
-postcss = require('gulp-postcss'),//imports postcss 
+postcss = require('gulp-postcss'),//imports postcss
 autoprefixer = require('autoprefixer'),
 cssvars = require('postcss-simple-vars'),//imports postcss-simple-vars for using variables
 nested = require('postcss-nested'),//allows nesting
 cssImport = require('postcss-import'),//alows importing
-mixins = require('postcss-mixins');
+mixins = require('postcss-mixins'),
+sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('styles', function() {// run this in the terminal with 'gulp html'
  //////////////////////////////////////////////////////////////////////////POSTCSS
@@ -14,5 +15,6 @@ gulp.task('styles', function() {// run this in the terminal with 'gulp html'
  		console.log(errorInfo.toString());
  		this.emit('end');
  	})
+ 	.pipe(sourcemaps.write())
  	.pipe(gulp.dest('./app/temp/styles'));
 });
