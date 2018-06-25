@@ -3,7 +3,7 @@
 {{#shapes}}
 	{{#first}}/*//this will only run once*/
 		.icon {
-		background-image: url('/assets/images/sprites/{{{sprite}}}');
+		background-image: url('../../assets/images/sprites/{{{sprite}}}');
 			}
 	{{/first}}
 .icon--{{base}} {
